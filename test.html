@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<title>Yen Tech | Young Engineers for New Technology</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root{
+  --main:#0a7d5c;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+
+*{margin:0;padding:0;box-sizing:border-box;font-family:Segoe UI,sans-serif}
+
+body{background:var(--light);color:var(--dark)}
+
+header{
+  background:var(--dark);
+  color:#fff;
+  padding:20px 60px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  position:sticky;
+  top:0;
+}
+
+header h1{color:#22c55e;font-size:22px}
+
+nav a{
+  color:white;
+  margin-left:20px;
+  text-decoration:none;
+}
+nav a:hover{color:#22c55e}
+
+.hero{
+  padding:100px 60px;
+  background:linear-gradient(to right,#0a7d5c,#22c55e);
+  color:white;
+  text-align:center;
+}
+
+.hero h2{font-size:40px;margin-bottom:15px}
+.hero p{max-width:800px;margin:auto}
+
+.btn{
+  display:inline-block;
+  margin-top:30px;
+  padding:14px 30px;
+  background:white;
+  color:#0a7d5c;
+  border-radius:30px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{padding:80px 60px}
+
+.services{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:30px;
+}
+
+.card{
+  background:white;
+  padding:30px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,.08);
+  transition:.3s;
+}
+.card:hover{transform:translateY(-8px)}
+.card h3{color:var(--main)}
+
+.contact{
+  background:#ecfdf5;
+  border-radius:20px;
+  padding:50px;
+  max-width:900px;
+  margin:auto;
+}
+
+.contact p{margin:10px 0;font-size:18px}
+
+footer{
+  background:var(--dark);
+  color:white;
+  text-align:center;
+  padding:30px;
+  margin-top:60px;
+}
+
+.whatsapp{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  color:white;
+  padding:15px 20px;
+  border-radius:50px;
+  text-decoration:none;
+  font-weight:bold;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Yen Tech</h1>
+<nav>
+  <a href="#accueil">Accueil</a>
+  <a href="#services">Services</a>
+  <a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero" id="accueil">
+<h2>Young Engineers for New Technology</h2>
+<p>
+Entreprise spécialisée dans les technologies durables,
+l’énergie solaire et le génie électrique.
+</p>
+<a href="#services" class="btn">Nos services</a>
+</section>
+
+<section id="services">
+<h2 style="text-align:center;margin-bottom:40px">Nos Services</h2>
+<div class="services">
+
+<div class="card">
+<h3>⚡ Génie électrique</h3>
+<p>Câblage, installations industrielles et domestiques, conception électrique.</p>
+</div>
+
+<div class="card">
+<h3>☀️ Énergie solaire</h3>
+<p>Installation de panneaux solaires et systèmes photovoltaïques.</p>
+</div>
+
+<div class="card">
+<h3>🔧 Maintenance & Dépannage</h3>
+<p>Réparation, diagnostic et entretien des installations électriques.</p>
+</div>
+
+<div class="card">
+<h3>🛒 Vente d’équipements</h3>
+<p>Appareils électroménagers et matériels électriques.</p>
+</div>
+
+</div>
+</section>
+
+<section id="contact">
+<h2 style="text-align:center;margin-bottom:30px">Contactez-nous</h2>
+
+<div class="contact">
+<p>📍 <strong>Zone de service :</strong> Kinshasa, République Démocratique du Congo</p>
+<p>📞 <strong>Mobile :</strong> 0825 044 520</p>
+<p>💬 <strong>WhatsApp :</strong> +243 825 044 520</p>
+<p>📧 <strong>Email :</strong> yentech8@gmail.com</p>
+</div>
+</section>
+
+<footer>
+<p>© 2026 Yen Tech | Young Engineers for New Technology</p>
+</footer>
+
+<a class="whatsapp" href="https://wa.me/243825044520" target="_blank">
+💬 WhatsApp
+</a>
+
+</body>
+</html>
